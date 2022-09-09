@@ -8,6 +8,8 @@ Deployment Workflow:
 
 ![Reference Architecture](./Diagrams/RealTimeSyncArchitecture.png)
 
+</br>
+
 ## The solution will deploy below components in the order shown in the diagram:
 
 1\. One-click deploy allows the creation of the Synapse Workspace, its corresponding ADLS Gen 2 storage with a container, Dedicated SQL Pool and Event Grid. Create a directory within the container created in the ADLS Gen 2 storage.
@@ -26,6 +28,8 @@ OR
 
 Create a Custom Event trigger from Synapse Studio (if using Event Grid based Trigger)
 
+</br>
+
 ## Pre-requisites:
 
 ### Mongo Setup
@@ -37,6 +41,8 @@ Create a Custom Event trigger from Synapse Studio (if using Event Grid based Tri
 ### Azure Account
 
 -   You must have an existing Azure account. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
+</br>
 
 ## Step 1 - Synapse Workspace Set Up
 
@@ -84,7 +90,7 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 </br>
 
 ## Step 2 - Configuration Changes for Change Streams Capture
-</br>
+
 1. Code for the App service is located in the below Github repos:
 
 -   Storage Trigger Based Code :
@@ -118,9 +124,9 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 </br>
 
 ## Step 3 - Create App Service and deploy the Event publishing Code
-</br>
 
--   Click the below “Deploy to Azure” button to create an App service Plan, App service and to deploy the code with your changed settings to the App Service.
+
+1\. Click the below “Deploy to Azure” button to create an App service Plan, App service and to deploy the code with your changed settings to the App Service.
     
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
 
@@ -139,7 +145,6 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 </br>
 
 ## Step 4 -Create Synapse Pipelines
-</br>
 
 1\. Import the Pipelines into the Synapse Workspace created
 
@@ -184,8 +189,6 @@ Make sure to add yourself to roles - “Owner” and “Storage Blob contributor
 
 ## Step 5 -Create Synapse Triggers
 
-</br>
-
 1\. Create the **Storage Trigger** or the **Custom Trigger** as per your preference following the screenshots below
 
 **Storage Trigger**
@@ -222,6 +225,7 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 -   Verify that the trigger (Storage/ Event) was triggered in the Monitoring tab of the Synapse Studio
 -   Verify that the Pipeline was triggered and completed successfully
 -   Verify that the Dedicated SQL pool was updated by querying the changed document
+
 </br>
 
 ## Contributing
@@ -237,6 +241,7 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
 </br>
 
 ## Trademarks
