@@ -129,10 +129,9 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
     **Synapse AppService template**
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
-  
-   
-    > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseAppServiceTemplate.json) using which you can create App Services and deploy the Event publishing code. 
 
+  > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseAppServiceTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Pook & Event Grid.
+   
 -   Below parameters are to be given to create the App Service Plan and App Service
 
     ![](./Diagrams/CreateAppService_1.png)
