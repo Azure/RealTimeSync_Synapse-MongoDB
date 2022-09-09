@@ -213,6 +213,7 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 ![](./Diagrams/CreateSynapseTriggers_5.png)
 
 </br>
+
 ## Test
 
 -   To Test real-time, go to Mongo Cluster, make a change in the values of the fields in the collection
