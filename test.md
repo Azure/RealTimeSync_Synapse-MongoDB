@@ -81,8 +81,11 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 
 ### 
 
-## Step 2 - Configuration Changes for Change Streams Capture
+</br>
+</br>
 
+## Step 2 - Configuration Changes for Change Streams Capture
+</br>
 1\. Code for the App service is located in the below Github repos:
 
 -   Storage Trigger Based Code :
@@ -208,6 +211,9 @@ Select Event Type as “Custom Events” and provide your Subscription, the Even
 Further on selecting **Continue,** you can define the parameter as “@triggerBody().event.data.fileName” to be passed from the trigger to the Pipeline. In this solution, we need the filename of the blob with the delta change that the Pipeline has to pick for changes to update the Dedicated SQL Pool.
 
 ![](./Diagrams/CreateSynapseTriggers_5.png)
+
+</br>
+</br>
 
 ## Test
 
