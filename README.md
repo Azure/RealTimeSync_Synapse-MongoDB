@@ -82,7 +82,6 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 ### 
 
 </br>
-</br>
 
 ## Step 2 - Configuration Changes for Change Streams Capture
 </br>
@@ -117,7 +116,6 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 | container                | The directory that is manually created within the Data Lake Storage container as in Step 1.3                                                                     |
 | fileType                 | Default to “Paraquet”                                                                                                                                            |
 </br>
-</br>
 
 ## Step 3 - Create App Service and deploy the Event publishing Code
 </br>
@@ -138,7 +136,6 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 
     ![](./Diagrams/CreateAppService_2.png)
 
-</br>
 </br>
 
 ## Step 4 -Create Synapse Pipelines
@@ -183,7 +180,9 @@ Publish the Pipeline. Once a file is created after a change is made to the Mongo
 
 Make sure to add yourself to roles - “Owner” and “Storage Blob contributor” to the ADLS Gen 2 storage, else you may get a “Forbidden” error.
 
+</br>
 ## Step 5 -Create Synapse Triggers
+</br>
 
 1\. Create the **Storage Trigger** or the **Custom Trigger** as per your preference following the screenshots below
 
@@ -212,8 +211,6 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 ![](./Diagrams/CreateSynapseTriggers_5.png)
 
 </br>
-</br>
-
 ## Test
 
 -   To Test real-time, go to Mongo Cluster, make a change in the values of the fields in the collection
@@ -222,8 +219,6 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 -   Verify that the trigger (Storage/ Event) was triggered in the Monitoring tab of the Synapse Studio
 -   Verify that the Pipeline was triggered and completed successfully
 -   Verify that the Dedicated SQL pool was updated by querying the changed document
-
-</br>
 </br>
 
 ## Contributing
