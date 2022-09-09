@@ -48,8 +48,6 @@ Create a Custom Event trigger from Synapse Studio (if using Event Grid based Tri
 
   > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseMainTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Pook & Event Grid. 
 
-[**Synapse Main Template**](https://github.com/Azure/RealTimeSync_Synapse-MongoDB/blob/0eb888b0f96a713abbc3e44ec1aa13531187a5e4/SynapseMainTemplate.docx)
-
 2\. The form below appears to capture the details required to create:
 
 -   Synapse Workspace and Azure Data Lake Storage Gen 2 attached to the Workspace
