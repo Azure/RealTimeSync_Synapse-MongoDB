@@ -128,7 +128,7 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 
 1\. Click the below “Deploy to Azure” button to create an App service Plan, App service and to deploy the code with your changed settings to the App Service.
     
-    [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
 
   > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseAppServiceTemplate.json) using which you can create App Service and deploy the Event publishing code.
    
