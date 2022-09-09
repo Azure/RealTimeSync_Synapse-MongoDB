@@ -46,7 +46,7 @@ Create a Custom Event trigger from Synapse Studio (if using Event Grid based Tri
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseMainTemplate.json)
 
-  > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseMainTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Poo1 & Event Grid. 
+  > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseMainTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Pool & Event Grid. 
 
 2\. The form below appears to capture the details required to create:
 
