@@ -1,14 +1,15 @@
-Real Time Sync Solution for MongoDB Atlas Integration with Synapse
+# Real Time Sync Solution for MongoDB Atlas Integration with Synapse
 
-# Use-Case:
+## Use-Case:
 
 The Solution details deployment of all components required for setting up a Real-time Sync between MongoDB Atlas instance and Synapse Dedicated SQL Pool. This means that any change (Insert, Update or Delete) in MongoDB Atlas collection is immediately reflected in the Synapse Dedicated SQL Pool. Thus, analytics and dashboards based on Dedicated SQL Pools will always reflect current data.
 
 Deployment Workflow:
 
+![Reference Architecture](./Diagrams/AzureAnalyticsEndToEnd.png)
 ![Diagram Description automatically generated](media/532ac3ce535a3539c947eb108e92fa48.png)
 
-# The solution will deploy below components in the order shown in the diagram:
+## The solution will deploy below components in the order shown in the diagram:
 
 1\. One-click deploy allows the creation of the Synapse Workspace, its corresponding ADLS Gen 2 storage with a container, Dedicated SQL Pool and Event Grid. Create a directory within the container created in the ADLS Gen 2 storage.
 
@@ -26,21 +27,21 @@ OR
 
 Create a Custom Event trigger from Synapse Studio (if using Event Grid based Trigger)
 
-# Pre-requisites:
+## Pre-requisites:
 
-## Mongo Setup
+### Mongo Setup
 
 -   Create a Free MongoDB Atlas account using [link](https://www.mongodb.com/docs/atlas/getting-started/)
 
     Follow all the steps in the above link to Register for a new Atlas account, create a cluster, connect to the same and you can also Load sample data.
 
-## Azure Account
+### Azure Account
 
 -   You must have an existing Azure account. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-# Step 1 - Synapse Workspace Set Up
+## Step 1 - Synapse Workspace Set Up
 
-## Create Synapse Workspace, ADLS Gen 2 storage, Dedicated SQL Pool and Event Grid
+### Create Synapse Workspace, ADLS Gen 2 storage, Dedicated SQL Pool and Event Grid
 
 1\. Click the below “Deploy to Azure” button
 
@@ -77,7 +78,7 @@ Provide the Event Grid Topic Name to which the Changestream will write an event 
 
 Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as Resource Providers in the subscription.
 
-## 
+### 
 
 ## Step 2 - Configuration Changes for Change Streams Capture
 
@@ -195,7 +196,7 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 
 ![](media/8bf34c18fbaafd5f7a02c958f81aaee2.png)
 
-# Test
+## Test
 
 -   To Test real-time, go to Mongo Cluster, make a change in the values of the fields in the collection
 -   Verify that App Service is up and running
