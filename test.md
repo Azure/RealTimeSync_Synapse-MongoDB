@@ -6,8 +6,7 @@ The Solution details deployment of all components required for setting up a Real
 
 Deployment Workflow:
 
-![Reference Architecture](./Diagrams/AzureAnalyticsEndToEnd.png)
-![Diagram Description automatically generated](media/532ac3ce535a3539c947eb108e92fa48.png)
+![Reference Architecture](./Diagrams/RealTimeSyncArchitecture.png)
 
 ## The solution will deploy below components in the order shown in the diagram:
 
@@ -54,9 +53,9 @@ Create a Custom Event trigger from Synapse Studio (if using Event Grid based Tri
     -   Event Grid topic
 -   Below parameters are to be given to create the **Synapse Workspace** and **ADLS Gen2** and **container** within the **ADLS Gen2**
 
-![](media/1e377b57aedcfb979de03a608a860a8a.png)
+![](./Diagrams/CreateSynapseWorkspace_1.png)
 
-![](media/195d96d34c7396cbe64a91504fd256e8.png)
+![](./Diagrams/CreateSynapseWorkspace_2.png)
 
 Provide values for the Resource Group, Region for deployment, name for the Synapse workspace, name for the ADLS Gen 2 storage account and the SQL Admin Login Id and Password. The rest of the parameters can be left to default values.
 
@@ -64,13 +63,13 @@ Also, provide the Container name for the container to be created within the ADLS
 
 -   Below parameters are to be given to create the **Dedicated SQL Pool**
 
-![](media/27f94a8c433a3d840bf35cf94a372aaa.png)
+![](./Diagrams/CreateSynapseWorkspace_3.png)
 
 Provide values for the SQL Pool Name, the SKU denoting the [DWH instance type](https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/) and the [Location](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/resource-location?tabs=azure-powershell). The rest of the parameters can be left to default values.
 
 -   Below parameters are to be given to create the **Event Grid**
 
-![](media/a27abec8eb09b0e0c752c86b2bf3deea.png)
+![](./Diagrams/CreateSynapseWorkspace_4.png)
 
 Provide the Event Grid Topic Name to which the Changestream will write an event when a change is detected. There is no need to add a subscription as it gets automatically attached when a trigger is created in Synapse.
 
@@ -119,7 +118,7 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 
 -   Below parameters are to be given to create the App Service Plan and App Service
 
-![](media/b1c5bafe6c78238fa3b3ee9c9ea1fb3b.png)
+![Deploy to Azure(https://aka.ms/deploytoazurebutton)]
 
 Provide values for your App Service Name (Site name), the App Service Plan name (Hosting Plan name), your forked Public Repo URL and its branch (main or another branch) along with the other basic information. The rest of the parameters can be left to default values. If not publishing using Public repo, then leave “Repo URL” to the default value and overwrite the App service deployment with a Visual studio publishing from your cloned repo.
 
