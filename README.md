@@ -223,6 +223,9 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 -   Verify that the Pipeline was triggered and completed successfully
 -   Verify that the Dedicated SQL pool was updated by querying the changed document
 
+</br>
+</br>
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
@@ -236,6 +239,7 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+</br>
 
 ## Trademarks
 
