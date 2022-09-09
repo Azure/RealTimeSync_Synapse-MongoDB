@@ -181,7 +181,9 @@ Publish the Pipeline. Once a file is created after a change is made to the Mongo
 Make sure to add yourself to roles - “Owner” and “Storage Blob contributor” to the ADLS Gen 2 storage, else you may get a “Forbidden” error.
 
 </br>
+
 ## Step 5 -Create Synapse Triggers
+
 </br>
 
 1\. Create the **Storage Trigger** or the **Custom Trigger** as per your preference following the screenshots below
