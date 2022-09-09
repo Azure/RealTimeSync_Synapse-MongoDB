@@ -86,7 +86,7 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 
 ## Step 2 - Configuration Changes for Change Streams Capture
 </br>
-1\. Code for the App service is located in the below Github repos:
+1. Code for the App service is located in the below Github repos:
 
 -   Storage Trigger Based Code :
 
@@ -123,12 +123,10 @@ Ensure that Azure Synapse, Data Factory, Sql, Storage, Event Grid are added as R
 </br>
 
 -   Click the below “Deploy to Azure” button to create an App service Plan, App service and to deploy the code with your changed settings to the App Service.
+    
+    [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
 
-    **Synapse AppService template**
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FRealTimeSync_Synapse-MongoDB%2Fmain%2FTemplates%2FSynapseAppServiceTemplate.json)
-
-  > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseAppServiceTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Pook & Event Grid.
+  > **Note:** The "Deploy to Azure" button above will redirect you to the Azure Portal with a reference to the resulting [ARM template file](./Templates/SynapseAppServiceTemplate.json) using which you can create Synapse Workspace, ADLS Gen2 storage, Dedicated SQL Pool & Event Grid.
    
 -   Below parameters are to be given to create the App Service Plan and App Service
 
@@ -224,26 +222,3 @@ Further on selecting **Continue,** you can define the parameter as “@triggerBo
 -   Verify that the trigger (Storage/ Event) was triggered in the Monitoring tab of the Synapse Studio
 -   Verify that the Pipeline was triggered and completed successfully
 -   Verify that the Dedicated SQL pool was updated by querying the changed document
-
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
