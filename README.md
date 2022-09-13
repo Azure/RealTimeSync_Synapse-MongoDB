@@ -1,6 +1,6 @@
 # Real-Time Sync Solution for MongoDB Atlas Integration with Synapse
 
-## Use-Case:
+## Use Case
 
 This solution details the deployment of all the components required for you to set up a real-time sync between an MongoDB Atlas instance and a Synapse dedicated SQL pool. This means that any change (Insert, Update, or Delete) in a MongoDB Atlas collection is immediately reflected in the Synapse dedicated SQL pool. Thus, analytics and dashboards that are based on dedicated SQL pools will always reflect the current data.
 
@@ -10,7 +10,9 @@ The following diagram shows you the deployment workflow:
 
 </br>
 
-## The solution will deploy the below components in the order shown in the diagram:
+## Deployment Steps
+
+**The solution will deploy the below components in the order shown in the diagram**
 
 1\. The one-click deploy allows you to create the Synapse workspace, its corresponding Azure Data Lake Storage (ADLS) Gen2 storage with a container, a dedicated SQL pool and instance of Event Grid. Create a directory within the container that you created in the ADLS Gen2 storage.
 
@@ -30,7 +32,7 @@ Create a custom event trigger from Synapse Studio (if you're using an Event Grid
 
 </br>
 
-## Pre-requisites:
+## Pre-requisites
 
 ### Mongo Setup
 
@@ -46,7 +48,7 @@ Create a custom event trigger from Synapse Studio (if you're using an Event Grid
 
 ## Step 1 - Synapse Workspace Setup
 
-### Create a Synapse workspace, ADLS Gen 2 storage, a dedicated SQL pool, and an Event Grid instance
+**Create a Synapse workspace, ADLS Gen 2 storage, a dedicated SQL pool, and an Event Grid instance**
 
 1\. Click the “Deploy to Azure” button below.
 
@@ -84,8 +86,6 @@ Provide the Event Grid topic name to which the Changestream will write an event 
 3\. Create a directory within your container in the newly created ADLS Gen 2 account that's associated with the Synapse workspace. Use the [Azure portal](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-explorer) or CLI to go to the ADLS Gen2 storage, and then create a directory within it.
 
 Ensure that Azure Synapse, Data Factory, SQL, Storage, and Event Grid are added as resource providers in the subscription.
-
-### 
 
 </br>
 
